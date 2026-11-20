@@ -1,0 +1,24 @@
+/**
+ * 微天气工程根构建脚本
+ * @author zhenhua
+ */
+pluginManagement {
+    repositories {
+        maven("https://maven.aliyun.com/repository/gradle-plugin")
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/public")
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositories {
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/public")
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "wxapp-android"
+include(":app")
